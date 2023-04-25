@@ -1,6 +1,6 @@
 import { LugarDesarrollo } from "./LugarDesarrollo";
 import { Tag } from "./Tag";
-
+//xd
 export class Evento{
     id: Number;
     nombre: String;
