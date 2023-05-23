@@ -14,7 +14,7 @@ var accesoUsuario: AccesoUsuario = new AccesoUsuario(url, database, database.col
 
 export const RutasUsuarios = Router();
 
-//RutasUsuarios.use("/usuarios", verificarDominio)
+RutasUsuarios.use("/usuarios", verificarDominio)
 
 //lista de usuarios
 RutasUsuarios.get("/usuarios", (_req,_res) => {
