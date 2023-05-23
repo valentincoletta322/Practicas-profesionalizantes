@@ -1,3 +1,5 @@
+import { TipoParticipacion } from "./TipoParticipacion";
+
 export class Participacion{
     id: Number;
     idEvento: Number;

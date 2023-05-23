@@ -1,13 +1,15 @@
+import { TipoUsuario } from "./TipoUsuario";
+
 export class Usuario{
- id: Number;
  correo: String;
+ contraseña: String;
  nombre: String;
  fotoPerfil: String;
  tipoUsuario: TipoUsuario;
 
- constructor(id: number, correo: string, nombre: String, fotoPerfil: string, tipoUsuario: TipoUsuario){
-    this.id = id;
+ constructor(correo: string, contraseña: String, nombre: String, fotoPerfil: string, tipoUsuario: TipoUsuario){
     this.correo = correo;
+    this.contraseña = contraseña;
     this.nombre = nombre;
     this.fotoPerfil = fotoPerfil;
     this.tipoUsuario = tipoUsuario

@@ -1,5 +1,5 @@
-enum TipoUsuario{
-    Investigador,
+export enum TipoUsuario{
     Usuario,
+    Investigador,
     Administrador
 }
