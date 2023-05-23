@@ -104,14 +104,14 @@ RutasUsuarios.patch("/usuarios/:nombre", (_req,_res) => {
 })
 
 // Registrarse
-RutasUsuarios.post("/usuarios/registrarse/:nombre", bodyParser.json(), (_req, _res) => {
+RutasUsuarios.post("/usuarios/registrarse/", bodyParser.json(), (_req, _res) => {
     console.log("cuerpo: " + _req.body.contraseña)
-    accesoUsuario.getUsuario(_req.params.nombre).then((v) => {
+    accesoUsuario.getUsuario(_req.body.nombre).then((v) => {
         if(v != undefined){
             _res.send("nombre de usuario ya en uso");
         }
         else{
-            accesoUsuario.registrarse(_req.params.nombre, _req.body.contraseña, _req.body.correo).then((b) => {
+            accesoUsuario.registrarse(_req.body.nombre, _req.body.contraseña, _req.body.correo).then((b) => {
                 _res.json(b);
             })
         }
