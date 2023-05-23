@@ -6,7 +6,7 @@ import { Db, MongoClient } from 'mongodb';
 import bodyParser from 'body-parser';
 
 
-const url: string = "mongodb://localhost:27017/Gestion-de-eventos-academicos";
+const url: string = "mongodb://127.0.0.1:27017/Gestion-de-eventos-academicos";
 const client: MongoClient = new MongoClient(url);
 const database: Db = client.db("Gestion-de-eventos-academicos");
 
